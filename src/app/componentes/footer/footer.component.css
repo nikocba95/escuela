@@ -1,0 +1,16 @@
+p,
+h2 {
+  font-family: "Alata", sans-serif;
+}
+p {
+  font-size: 16px;
+}
+h2 {
+  font-size: 22px;
+}
+span {
+  color: red;
+}
+#derechos {
+  border-bottom: 3px solid red;
+}
