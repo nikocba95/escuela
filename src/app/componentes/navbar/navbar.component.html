@@ -1,27 +1,45 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand ml-5" href="#"><img class="img-redonda" src="../../../assets/logo.jpg" alt="logo-escuela" width="100em"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active pr-5 pl-5">
-          <a class="nav-link text-center" href="#">Inicio</a>
-        </li>
-        <li class="nav-item pr-5 pl-5">
-          <a class="nav-link text-center" href="#">Institucional</a>
-        </li>
-        <li class="nav-item pr-5 pl-5">
-          <a class="nav-link text-center" href="#">Alumnos</a>
-        </li>
-        <li class="nav-item pr-5 pl-5">
-            <a class="nav-link text-center" href="#">Docentes</a> 
-        </li>
-        <li class="nav-item pr-5 pl-5">
-            <a class="nav-link text-center" href="#">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
+  <a class="navbar-brand ml-5" [routerLink]="['home']"
+    ><img
+      class="img-redonda"
+      src="../../../assets/logo.jpg"
+      alt="logo-escuela"
+      width="100em"
+  /></a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div
+    class="collapse navbar-collapse justify-content-end"
+    id="navbarSupportedContent"
+  >
+    <ul class="navbar-nav">
+      <li class="nav-item active pr-5 pl-5" routerLinkActive="active">
+        <a class="nav-link text-center" [routerLink]="['home']">Inicio</a>
+      </li>
+      <li class="nav-item pr-5 pl-5" routerLinkActive="active">
+        <a class="nav-link text-center" [routerLink]="['institucional']"
+          >Institucional</a
+        >
+      </li>
+      <li class="nav-item pr-5 pl-5" routerLinkActive="active">
+        <a class="nav-link text-center" [routerLink]="['alumno']">Alumnos</a>
+      </li>
+      <li class="nav-item pr-5 pl-5" routerLinkActive="active">
+        <a class="nav-link text-center" [routerLink]="['docente']">Docentes</a>
+      </li>
+      <li class="nav-item pr-5 pl-5" routerLinkActive="active">
+        <a class="nav-link text-center" [routerLink]="['contacto']">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
